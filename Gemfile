@@ -15,13 +15,13 @@ gem 'rails', '~> 7.0.3'
 gem 'rbenv', '~> 9001'
 gem 'rubocop', '~> 1.30', '>= 1.30.1'
 gem 'sprockets-rails'
-gem 'sqlite3', '~> 1.4'
 gem 'stimulus-rails'
 gem 'turbo-rails'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
 group :development do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
+  gem 'sqlite3', '~> 1.4'
   gem 'web-console'
 end
 
