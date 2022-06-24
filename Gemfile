@@ -20,12 +20,14 @@ gem 'stimulus-rails'
 gem 'turbo-rails'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
-group :development, :test do
+group :development do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
+  gem 'web-console'
 end
 
-group :development do
-  gem 'web-console'
+group :production do
+  gem 'pg'
+  gem 'rails_12factor'
 end
 
 group :test do
