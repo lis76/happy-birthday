@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get 'pages/lera'
   get 'pages/se'
   get 'pages/mama'
+  get 'pages/surpriz'
 end
