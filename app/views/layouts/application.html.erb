@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Happy</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -11,6 +11,17 @@
   </head>
 
   <body>
+  <div class="container-fluid container-background">
+
+    <button type="button" class="btn btn-light"><%= link_to "Главная", root_path %></button>
+    <button type="button" class="btn btn-info"><%= link_to "Саша и Егор", pages_se_path %></button>
+    <button type="button" class="btn btn-warning"><%= link_to "Мама", pages_mama_path %></button>
+    <button type="button" class="btn btn-danger"><%= link_to "Лера", pages_lera_path %></button>
+    <button type="button" class="btn btn-success"><%= link_to "Света и Рома", pages_rs_path %></button>
+    <button type="button" class="btn btn-dark">Dark</button>
+
+    
     <%= yield %>
+  </div>
   </body>
 </html>
